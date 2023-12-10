@@ -5,5 +5,5 @@ class MiddlewareappConfig(object):
 		self.get_response = get_response
 
 	def __call__(self,request):
-		data = '<h1>Server is under maintainance</h1>'
+		data = '<h1>Server is under maintainance, please re-visit our server after couple of hours</h1>'
 		return HttpResponse(data)
